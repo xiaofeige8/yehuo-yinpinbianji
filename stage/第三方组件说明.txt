@@ -1,0 +1,35 @@
+野火音频编辑 2.0 第三方组件说明
+
+界面与批处理流程由独立的 C# 源码构建，不包含原 Audio Speed Changer Pro 主程序。
+以下组件从用户提供的本地软件包提取，二进制保持原样；各自的版权、许可和商业使用条件仍适用。本应用没有第三方组件的授权转授能力。
+
+bass.dll：BASS，Un4seen Developments
+https://www.un4seen.com/bass.html
+https://www.un4seen.com/bass.html#license
+
+bass_fx.dll：BASS_FX / SoundTouch 音频变速与变调
+https://www.un4seen.com/bass.html#addons
+https://www.surina.net/soundtouch/
+
+bass_aac.dll：BASS AAC 解码插件
+https://www.un4seen.com/bass.html#addons
+
+lame.exe：LAME 3.98.3 MP3 编码器（LGPL）
+https://lame.sourceforge.io/
+对应源代码：https://sourceforge.net/projects/lame/files/lame/3.98.3/
+LAME 源码随附许可全文：Licenses/LGPL-2.0.txt；另附 LGPL-2.1.txt。仅调用独立编码器进行编码，未调用其 mpglib 解码功能。
+
+oggenc.exe：OggEnc 1.0.2 / Ogg/Vorbis 编码工具
+https://www.vorbis.com/
+https://downloads.xiph.org/releases/
+
+faac.exe：FAAC 1.28 AAC 编码器
+https://sourceforge.net/projects/faac/
+对应版本源代码：https://sourceforge.net/projects/faac/files/faac-src/faac-1.28/
+组件自带许可声明：Licenses/FAAC-1.28.txt。
+
+二进制清单及 SHA-256 见第三方组件校验.json，可用于核对与原包一致。
+
+BouncyCastle.Crypto.dll：Portable.BouncyCastle 1.9.0，提供 Ed25519 签名和与现有 GG 身份兼容的 AES-GCM 加密。使用 MIT 许可，全文见 Licenses/BouncyCastle-1.9.0.html。
+来源：https://www.nuget.org/packages/Portable.BouncyCastle/1.9.0
+源码：https://github.com/bcgit/bc-csharp/tree/release-1.9.0

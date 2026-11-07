@@ -1,0 +1,25 @@
+/stage/野火音频编辑.exe
+/tests/*.exe
+/tests/*.dll
+/tests/protocol-capture.json
+/artifacts/
+/outputs/
+/bin/
+/obj/
+/.vs/
+*.user
+*.suo
+*.log
+*.tmp
+*.zip
+*.7z
+*.pdb
+device.enc
+device_key.bin
+license_code.txt
+license_token.bin
+Local State
+settings.xml
+.env
+.env.*
+!.env.example
